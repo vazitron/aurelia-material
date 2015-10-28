@@ -38,7 +38,7 @@
       "lib": "dist"
     },
     "dependencies": {
-      "google/material-design-lite": "github:google/material-design-lite@^1.0.0",
+      "google/material-design-lite": "github:google/material-design-lite@1.0.5",
       "jquery": "github:components/jquery@^2.1.4",
       "lodash": "npm:lodash@^3.10.0"
     },
@@ -48,7 +48,7 @@
       "core-js": "npm:core-js@^0.9.4"
     },
     "overrides": {
-      "github:google/material-design-lite@1.0.0": {
+      "github:google/material-design-lite@1.0.5": {
         "main": "./material.js"
       }
     }
