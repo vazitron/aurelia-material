@@ -49,6 +49,13 @@
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.1.4"
+    },
+    "overrides": {
+      "github:google/material-design-lite@1.0.6": {
+        "main": "material.js",
+        "registry": "github",
+        "format": "global"
+      }
     }
   }
 }
