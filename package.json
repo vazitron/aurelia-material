@@ -43,7 +43,7 @@
       "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.0.3",
       "jquery": "github:components/jquery@^2.1.4",
       "lodash": "npm:lodash@^3.10.0",
-      "material-design-lite": "github:google/material-design-lite@1.0.6"
+      "material-design-lite": "github:google/material-design-lite@^1.0.6"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
