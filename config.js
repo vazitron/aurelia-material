@@ -19,7 +19,7 @@ System.config({
     "core-js": "npm:core-js@1.2.6",
     "jquery": "github:components/jquery@2.1.4",
     "lodash": "npm:lodash@3.10.1",
-    "material-design-lite": "github:google/material-design-lite@1.0.6",
+    "material-design-lite": "github:google/material-design-lite@1.1.1",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },

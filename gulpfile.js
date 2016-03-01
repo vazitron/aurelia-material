@@ -14,26 +14,12 @@ var paths = {
   , sourceRoot: path.join(__dirname, 'src'),
 }
 
-
-// need this options to use decorators
-var compilerOptions = {
-  stage: 0,
-  optional: [
-    "es7.decorators",
-    "regenerator",
-    "asyncToGenerator",
-    "es7.classProperties",
-    "es7.asyncFunctions"
-  ]
-};
-
-
 gulp.task('build-client', function () {
   return gulp.src(paths.source)
     .pipe(plumber())
     .pipe(changed(paths.dist, {extension: '.js'}))
     .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(babel(compilerOptions))
+    .pipe(babel())
     .pipe(sourcemaps.write('.', { includeContent: true, sourceRoot: paths.sourceRoot}))
     .pipe(gulp.dest(paths.dist));
 });

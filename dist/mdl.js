@@ -1,14 +1,11 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
      value: true
 });
+exports.MDLCustomAttribut = undefined;
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _aureliaFramework = require('aurelia-framework');
 
@@ -17,6 +14,10 @@ var _materialDesignLite = require('material-design-lite');
 var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var mdlTypes = {
      button: {
@@ -91,9 +92,9 @@ var mdlTypes = {
 };
 
 function manageRipple(element) {
-     var classes = (0, _jquery2['default'])(element).attr('class');
+     var classes = (0, _jquery2.default)(element).attr('class');
      if (classes.split(' ').indexOf('mdl-js-ripple-effect') != -1) _materialDesignLite.componentHandler.upgradeElement(element, "MaterialRipple");
-     var elts = (0, _jquery2['default'])(element).find(".mdl-js-ripple-effect").get();
+     var elts = (0, _jquery2.default)(element).find(".mdl-js-ripple-effect").get();
      var _iteratorNormalCompletion = true;
      var _didIteratorError = false;
      var _iteratorError = undefined;
@@ -108,8 +109,8 @@ function manageRipple(element) {
           _iteratorError = err;
      } finally {
           try {
-               if (!_iteratorNormalCompletion && _iterator['return']) {
-                    _iterator['return']();
+               if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
                }
           } finally {
                if (_didIteratorError) {
@@ -128,7 +129,8 @@ function upgradeElement(element, type) {
      var _ref$js = _ref.js;
      var js = _ref$js === undefined ? [] : _ref$js;
 
-     if (html) (0, _jquery2['default'])(element).addClass(html.join(' '));
+
+     if (html) (0, _jquery2.default)(element).addClass(html.join(' '));
 
      var _iteratorNormalCompletion2 = true;
      var _didIteratorError2 = false;
@@ -144,8 +146,8 @@ function upgradeElement(element, type) {
           _iteratorError2 = err;
      } finally {
           try {
-               if (!_iteratorNormalCompletion2 && _iterator2['return']) {
-                    _iterator2['return']();
+               if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                    _iterator2.return();
                }
           } finally {
                if (_didIteratorError2) {
@@ -168,8 +170,8 @@ function upgradeElement(element, type) {
           _iteratorError3 = err;
      } finally {
           try {
-               if (!_iteratorNormalCompletion3 && _iterator3['return']) {
-                    _iterator3['return']();
+               if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                    _iterator3.return();
                }
           } finally {
                if (_didIteratorError3) {
@@ -179,9 +181,9 @@ function upgradeElement(element, type) {
      }
 }
 
-var MDLCustomAttribut = (function () {
+var MDLCustomAttribut = exports.MDLCustomAttribut = function () {
      function MDLCustomAttribut(element) {
-          _classCallCheck(this, _MDLCustomAttribut);
+          _classCallCheck(this, MDLCustomAttribut);
 
           this.element = element;
      }
@@ -194,11 +196,6 @@ var MDLCustomAttribut = (function () {
           }
      }]);
 
-     var _MDLCustomAttribut = MDLCustomAttribut;
-     MDLCustomAttribut = (0, _aureliaFramework.customAttribute)('mdl')(MDLCustomAttribut) || MDLCustomAttribut;
-     MDLCustomAttribut = (0, _aureliaFramework.inject)(Element)(MDLCustomAttribut) || MDLCustomAttribut;
      return MDLCustomAttribut;
-})();
-
-exports.MDLCustomAttribut = MDLCustomAttribut;
+}();
 //# sourceMappingURL=mdl.js.map
