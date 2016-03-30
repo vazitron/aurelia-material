@@ -52,7 +52,7 @@
       "core-js": "npm:core-js@^1.1.4"
     },
     "overrides": {
-      "github:google/material-design-lite@1.0.6": {
+      "github:google/material-design-lite@^1.0.6": {
         "main": "material.js",
         "registry": "github",
         "format": "global"
